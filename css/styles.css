@@ -1,0 +1,85 @@
+/* reset and common code start*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+}
+.btn{
+    border: none;
+    border-radius: .6rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+/* reset and common code start*/
+
+/* common reset code here */
+
+div{
+    padding: 1rem;
+    margin: 1rem;
+    width: 500px;
+}
+
+/* common reset code here end*/
+
+
+/* card design start */
+.card{
+    background-color: bisque;
+}
+.card__title{
+    color: green;
+}
+.card__btn{
+    background-color: blue;
+    color: #fff;
+}
+.card--large{
+    width: 800px;
+}
+/* card design end */
+
+
+
+/* feedback design start */
+.feedback{
+    background-color: aqua;
+    max-width: 500px;
+}
+.feedback__title{
+    color: brown;
+}
+.feedback__btn{
+    background-color: paleturquoise;
+}
+.feedbacl__btn--large{
+    width: 200px;
+}
+/* feedback  design end */
+
+
+/* ========================
+
+prblem : 1.css spacity
+       : 2.css class name clash
+       :A
+
+To solove this problem use Bem: Block, Elementn modifier
+ slove : A coommon rule needed
+
+ Block: 1.meaningful container/parent
+        2. we can use - letters, digit, dashes for naming block
+        3.use dash for more than one word
+
+ Element:  1.Not meaningful like container/parent but related to container
+           2.we can use - letters, digit, underscore for naming Element
+           3.use dash for more than one word
+           4.Syntax : block__element
+
+ modifier: 1. modify block/element (apperance, state)
+           2.we can use - letters, digit, underscore for naming Element
+           3.use dash for more than one word
+           4.Syntax : block/element--modifier
+=========================== */
